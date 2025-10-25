@@ -1,20 +1,35 @@
-GitHub / LinkedIn Description
+# 🧠 Smart AI Spell Corrector (Flask + NLP + Norvig)
 
-Project Name: Smart AI Spell Corrector (Flask + NLP + Norvig)
+A web-based AI spell corrector built with **Flask** that uses **Norvig’s probabilistic language model**, **phonetic similarity**, and a **large English corpus** to intelligently detect and fix spelling errors — including scientific and pronunciation-based typos like:
 
-Description:
+> “photosinthesis → photosynthesis”
 
-A web-based AI spell corrector built with Flask that uses Norvig’s probabilistic language model, phonetic similarity, and a large English corpus to detect and fix spelling errors — including scientific and pronunciation-based typos like “photosinthesis → photosynthesis.”
+---
 
-Tech Stack:
-Python • Flask • NLP • Norvig Algorithm • Soundex • Text Processing
+## 🚀 Features
+- 🔤 **Edit Distance Correction (Multi-level)** — Suggests words based on minimal edit operations.  
+- 🔊 **Phonetic Sound Matching** — Uses Soundex to detect pronunciation-based misspellings.  
+- 📚 **Large English Word Corpus** — Improves accuracy through extensive vocabulary coverage.  
+- 💻 **Responsive Web UI** — Built using Flask templates for smooth interaction.  
 
-Key Features:
+---
 
-Edit distance correction (multi-level)
+## 🧩 Tech Stack
+**Python** • **Flask** • **NLP** • **Norvig Algorithm** • **Soundex** • **Text Processing**
 
-Phonetic sound matching
+---
 
-Large English word corpus
+## ⚙️ How It Works
+1. **Input** a misspelled word or sentence.  
+2. **Generate** candidate corrections using edit distance and phonetic similarity.  
+3. **Score** candidates with a probabilistic language model.  
+4. **Return** the most likely correct word(s) via the Flask web interface.
 
-Responsive web UI
+---
+
+## 📦 Installation
+```bash
+git clone https://github.com/yourusername/smart-ai-spell-corrector.git
+cd smart-ai-spell-corrector
+pip install -r requirements.txt
+python app.py
