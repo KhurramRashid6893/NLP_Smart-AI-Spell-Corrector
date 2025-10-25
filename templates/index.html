@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Spell Corrector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 Smart Spell Corrector</h1>
+        <p>Enhanced version using NLP, Norvig + Phonetic Correction</p>
+        
+        <form method="POST">
+            <textarea name="text" placeholder="Type your text here...">{{ input_text }}</textarea>
+            <button type="submit">Correct Spelling</button>
+        </form>
+
+        {% if corrected_text %}
+        <div class="output">
+            <h3>✅ Corrected Text:</h3>
+            <p>{{ corrected_text }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
